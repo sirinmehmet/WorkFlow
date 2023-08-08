@@ -1,0 +1,64 @@
+﻿@using İşTakipProjesi.Models.Baglantisql
+@model List<Personel>
+
+@{
+    ViewBag.Title = "PersonelListesi";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<style>
+    #dataTable.dataTable.no-footer {
+        border-bottom: 1px solid white;
+    }
+</style>
+<title>Personel Listesi</title>
+<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="card mx-auto">
+        <h5 class="card-header">Personel Listesi</h5>
+        <div class="table-responsive text-nowrap">
+            <table class="table" id="dataTable">
+                <thead>
+                    <tr>
+                        <th>PERSONEL ID</th>
+                        <th>AD SOYAD</th>
+                        <th>E-MAİL</th>
+                        <th>KULLANICI ADI</th>
+                        <th>ŞİFRE</th>
+                        <th>AKTİF Mİ</th>
+                        <th>SİL</th>
+                        <th>GÜNCELLE</th>
+                    </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                    @foreach (var veri in Model)
+                    {
+                        <tr>
+                            <td>@veri.ID</td>
+                            <td>@veri.AdSoyad</td>
+                            <td>@veri.Eposta</td>
+                            <td>@veri.KullaniciAdi</td>
+                            <td>@veri.Sifre</td>
+                            <td>@veri.AktifMi</td>
+                            <td>
+                                <a class="btn btn-danger" href="/Admin/PersonelSıl/@veri.ID">SİL</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-success" href="/Admin/PersonelBilgiGetir/@veri.ID">GÜNCELLE</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#dataTable').DataTable();
+        });
+    </script>
+}

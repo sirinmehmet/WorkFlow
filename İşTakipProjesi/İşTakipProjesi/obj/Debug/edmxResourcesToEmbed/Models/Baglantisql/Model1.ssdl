@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="İşTakipDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminGiris">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdiSoyadi" Type="varchar(max)" />
+    <Property Name="KullaniciAdi" Type="varchar(max)" />
+    <Property Name="Sifre" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="İletisim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GönderenKisi" Type="varchar(max)" />
+    <Property Name="GönderilecekKisi" Type="varchar(max)" />
+    <Property Name="Konu" Type="varchar(max)" />
+    <Property Name="Mesaj" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="İsTakip">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SorumluPersonel" Type="varchar(max)" />
+    <Property Name="TalepEden" Type="varchar(max)" />
+    <Property Name="Konu" Type="varchar(max)" />
+    <Property Name="Departman" Type="varchar(max)" />
+    <Property Name="Modul" Type="varchar(max)" />
+    <Property Name="Tarih" Type="varchar(max)" />
+    <Property Name="Durum" Type="varchar(max)" />
+    <Property Name="Dosya" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="OrtakAlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gonderen" Type="varchar" MaxLength="50" />
+    <Property Name="Konu" Type="varchar(max)" />
+    <Property Name="Mesaj" Type="varchar(max)" />
+    <Property Name="Dosya" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Personel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdSoyad" Type="varchar(max)" />
+    <Property Name="Eposta" Type="varchar(max)" />
+    <Property Name="KullaniciAdi" Type="varchar(max)" />
+    <Property Name="Sifre" Type="varchar(max)" />
+    <Property Name="AktifMi" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="İşTakipDbModelStoreContainer">
+    <EntitySet Name="AdminGiris" EntityType="Self.AdminGiris" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="İletisim" EntityType="Self.İletisim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="İsTakip" EntityType="Self.İsTakip" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrtakAlan" EntityType="Self.OrtakAlan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

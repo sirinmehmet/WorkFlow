@@ -1,0 +1,164 @@
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\İşTakipProjesi.dll.config
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\İşTakipProjesi.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\İşTakipProjesi.pdb
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csc.exe
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csc.exe.config
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csc.rsp
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csi.exe
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csi.exe.config
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csi.rsp
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.AppContext.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Console.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.IO.Compression.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Net.Http.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.ValueTuple.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\vbc.exe
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\vbc.exe.config
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\vbc.rsp
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\VBCSCompiler.exe
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\EntityFramework.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\EntityFramework.SqlServer.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Helpers.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Mvc.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Razor.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.Razor.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\EntityFramework.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\EntityFramework.SqlServer.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Razor.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.Razor.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Helpers.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Mvc.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.csproj.AssemblyReference.cache
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.csproj.CoreCompileInputs.cache
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.csproj.CopyComplete
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.pdb
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\EPPlus.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\EPPlus.Interfaces.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\EPPlus.System.Drawing.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\EPPlus.xml
+C:\Users\Enes\source\repos\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\İşTakipProjesi.dll.config
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\İşTakipProjesi.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\İşTakipProjesi.pdb
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csc.exe
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csc.exe.config
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csc.rsp
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csi.exe
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csi.exe.config
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\csi.rsp
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.AppContext.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Console.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.IO.Compression.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Net.Http.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.ValueTuple.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\vbc.exe
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\vbc.exe.config
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\vbc.rsp
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\VBCSCompiler.exe
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\EntityFramework.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\EntityFramework.SqlServer.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\EPPlus.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\EPPlus.Interfaces.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\EPPlus.System.Drawing.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Helpers.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Mvc.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Razor.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.Deployment.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.Razor.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\EntityFramework.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\EntityFramework.SqlServer.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\EPPlus.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Razor.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.Deployment.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Webpages.Razor.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Helpers.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\System.Web.Mvc.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.csproj.AssemblyReference.cache
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.csproj.CoreCompileInputs.cache
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.csproj.CopyComplete
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.dll
+C:\Users\mehmets\Desktop\İşTakipProjesi (3)\İşTakipProjesi\İşTakipProjesi\obj\Debug\İşTakipProjesi.pdb

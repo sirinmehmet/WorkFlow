@@ -1,0 +1,31 @@
+﻿@model İşTakipProjesi.Models.Baglantisql.İletisim
+
+@{
+    ViewBag.Title = "Reply to Message";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="card mx-lg-" style="margin-top:5%; max-width:800px; margin-left:22%;">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Mesaj Cevapla</h5>
+        <small class="text-muted float-end">İletişim</small>
+    </div>
+    <div class="card-body">
+
+        <form method="post" action="@Url.Action("MesajCevapla", "Admin")">
+            @Html.HiddenFor(model => model.ID)
+            @Html.HiddenFor(model => model.GönderenKisi)
+            @Html.HiddenFor(model => model.GönderilecekKisi)
+
+            <div class="form-group">
+                <label>Subject:</label>
+                @Html.TextBoxFor(model => model.Konu, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Message:</label>
+                @Html.TextAreaFor(model => model.Mesaj, new { @class = "form-control" })
+            </div>
+            <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+        </form>
+    </div>
+</div>

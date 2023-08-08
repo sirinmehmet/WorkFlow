@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="İşTakipDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AdminGiris">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdiSoyadi" Type="varchar(max)" />
+          <Property Name="KullaniciAdi" Type="varchar(max)" />
+          <Property Name="Sifre" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="İletisim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GönderenKisi" Type="varchar(max)" />
+          <Property Name="GönderilecekKisi" Type="varchar(max)" />
+          <Property Name="Konu" Type="varchar(max)" />
+          <Property Name="Mesaj" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="İsTakip">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SorumluPersonel" Type="varchar(max)" />
+          <Property Name="TalepEden" Type="varchar(max)" />
+          <Property Name="Konu" Type="varchar(max)" />
+          <Property Name="Departman" Type="varchar(max)" />
+          <Property Name="Modul" Type="varchar(max)" />
+          <Property Name="Tarih" Type="varchar(max)" />
+          <Property Name="Durum" Type="varchar(max)" />
+          <Property Name="Dosya" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="OrtakAlan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Gonderen" Type="varchar" MaxLength="50" />
+          <Property Name="Konu" Type="varchar(max)" />
+          <Property Name="Mesaj" Type="varchar(max)" />
+          <Property Name="Dosya" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="varchar(max)" />
+          <Property Name="Eposta" Type="varchar(max)" />
+          <Property Name="KullaniciAdi" Type="varchar(max)" />
+          <Property Name="Sifre" Type="varchar(max)" />
+          <Property Name="AktifMi" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="İşTakipDbModelStoreContainer">
+          <EntitySet Name="AdminGiris" EntityType="Self.AdminGiris" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="İletisim" EntityType="Self.İletisim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="İsTakip" EntityType="Self.İsTakip" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OrtakAlan" EntityType="Self.OrtakAlan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="İşTakipDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AdminGiris">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullaniciAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AdiSoyadi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="İletisim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Konu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Mesaj" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="GönderilecekKisi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="GönderenKisi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="İsTakip">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SorumluPersonel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TalepEden" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Konu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Departman" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Modul" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tarih" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Durum" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dosya" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Eposta" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="KullaniciAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AktifMi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="İşTakipDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdminGiris" EntityType="Self.AdminGiris" />
+          <EntitySet Name="İletisim" EntityType="Self.İletisim" />
+          <EntitySet Name="İsTakip" EntityType="Self.İsTakip" />
+          <EntitySet Name="Personel" EntityType="Self.Personel" />
+          <EntitySet Name="OrtakAlan" EntityType="İşTakipDbModel.OrtakAlan" />
+        </EntityContainer>
+        <EntityType Name="OrtakAlan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Gonderen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Konu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Mesaj" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Dosya" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="İşTakipDbModelStoreContainer" CdmEntityContainer="İşTakipDbEntities">
+          <EntitySetMapping Name="AdminGiris">
+            <EntityTypeMapping TypeName="İşTakipDbModel.AdminGiris">
+              <MappingFragment StoreEntitySet="AdminGiris">
+                <ScalarProperty Name="AdiSoyadi" ColumnName="AdiSoyadi" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="İletisim">
+            <EntityTypeMapping TypeName="İşTakipDbModel.İletisim">
+              <MappingFragment StoreEntitySet="İletisim">
+                <ScalarProperty Name="GönderenKisi" ColumnName="GönderenKisi" />
+                <ScalarProperty Name="GönderilecekKisi" ColumnName="GönderilecekKisi" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Konu" ColumnName="Konu" />
+                <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="İsTakip">
+            <EntityTypeMapping TypeName="İşTakipDbModel.İsTakip">
+              <MappingFragment StoreEntitySet="İsTakip">
+                <ScalarProperty Name="Dosya" ColumnName="Dosya" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SorumluPersonel" ColumnName="SorumluPersonel" />
+                <ScalarProperty Name="TalepEden" ColumnName="TalepEden" />
+                <ScalarProperty Name="Konu" ColumnName="Konu" />
+                <ScalarProperty Name="Departman" ColumnName="Departman" />
+                <ScalarProperty Name="Modul" ColumnName="Modul" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Personel">
+            <EntityTypeMapping TypeName="İşTakipDbModel.Personel">
+              <MappingFragment StoreEntitySet="Personel">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrtakAlan">
+            <EntityTypeMapping TypeName="İşTakipDbModel.OrtakAlan">
+              <MappingFragment StoreEntitySet="OrtakAlan">
+                <ScalarProperty Name="Dosya" ColumnName="Dosya" />
+                <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+                <ScalarProperty Name="Konu" ColumnName="Konu" />
+                <ScalarProperty Name="Gonderen" ColumnName="Gonderen" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"
+      class="light-style layout-menu-fixed"
+      dir="ltr"
+      data-theme="theme-default"
+      data-assets-path="~/sneat-bootstrap-html-admin-template/assets/"
+      data-template="vertical-menu-template-free">
+<head>
+    <title>Admin Paneli</title>
+    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="~/sneat-bootstrap-html-admin-template/assets/img/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="~/sneat-bootstrap-html-admin-template/assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="~/sneat-bootstrap-html-admin-template/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="~/sneat-bootstrap-html-admin-template/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="~/sneat-bootstrap-html-admin-template/assets/css/demo.css" />
+    <link rel="stylesheet" href="~/sneat-bootstrap-html-admin-template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="~/sneat-bootstrap-html-admin-template/assets/vendor/libs/apex-charts/apex-charts.css" />
+    <script src="~/sneat-bootstrap-html-admin-template/assets/vendor/js/helpers.js"></script>
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="/Admin/Dashboard" class="app-brand-link">
+                        <span class="app-brand-text demo menu-text fw-bolder ms-2">Admin Paneli</span>
+                    </a>
+                </div>
+                <ul class="menu-inner py-1">
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">İş İşlemleri</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/Personel/YeniIsKaydı" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-file-plus" "></i>
+                            <div data-i18n="Layouts">Yeni İş Kaydı Ekle</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                            <div data-i18n="Account Settings">İş İşlemleri</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="/Personel/PersonelIslerim" class="menu-link">
+                                    <div data-i18n="Account">Tüm İşler</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/Personel/DevamEdenIsListesi" class="menu-link">
+                                    <div data-i18n="Notifications">Devam Eden</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/Personel/IptalEdilenIsListesi" class="menu-link">
+                                    <div data-i18n="Connections">İptal Edilen</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/Personel/TamamlananIsListesi" class="menu-link">
+                                    <div data-i18n="Connections">Tamamlanan</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Mesaj İşlemleri</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/Personel/MesajGönder" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-message-add"></i>
+                            <div data-i18n="Layouts">Mesaj Gönder</div>
+                        </a>
+                    </li>
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Çıkış</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/Giris/PersonelGiris" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-log-out"></i>
+                            <div data-i18n="Layouts">Çıkış Yap</div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="layout-page">
+                @RenderBody()
+                @RenderSection("scripts", required: false)
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            @*<script src="~/sneat-bootstrap-html-admin-template/assets/vendor/libs/jquery/jquery.js"></script>*@
+            <script src="~/sneat-bootstrap-html-admin-template/assets/vendor/libs/popper/popper.js"></script>
+            <script src="~/sneat-bootstrap-html-admin-template/assets/vendor/js/bootstrap.js"></script>
+            <script src="~/sneat-bootstrap-html-admin-template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+            <script src="~/sneat-bootstrap-html-admin-template/assets/vendor/js/menu.js"></script>
+            <script src="~/sneat-bootstrap-html-admin-template/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+            <script src="~/sneat-bootstrap-html-admin-template/assets/js/main.js"></script>
+            <script src="~/sneat-bootstrap-html-admin-template/assets/js/dashboards-analytics.js"></script>
+            <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

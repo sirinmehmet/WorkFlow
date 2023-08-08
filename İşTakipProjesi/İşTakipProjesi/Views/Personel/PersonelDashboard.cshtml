@@ -1,0 +1,217 @@
+﻿@using System.Web.Helpers
+@model İşTakipProjesi.Controllers.DashboardViewModel
+@{
+    ViewBag.Title = "PersonelDashboard";
+    Layout = "~/Views/Shared/PersonelLayout.cshtml";
+}
+
+<style>
+    .chart-container {
+        position: relative;
+        margin: auto;
+        height: 320px;
+        margin-left: 100px;
+    }
+</style>
+<title>Admin Dashboard</title>
+<link href="https://cdn.jsdelivr.net/npm/chart.js" rel="stylesheet" />
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+            <div class="col-lg-8 mb-4 order-0">
+                <div class="card">
+                    <div class="d-flex align-items-end row">
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Kullanıcı Paneline Hoşgeldiniz, @Session["adsoyad"] 🎉</h5>
+                                <p class="mb-4">
+                                    Dashboard ekranından işleri takip edebilir, istatistiklerini görebilirsiniz.
+                                </p>
+
+                                <a href="/Personel/PersonelIslerim" class="btn btn-sm btn-outline-primary">Tüm İşler</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 text-center text-sm-left">
+                            <div class="card-body pb-0 px-0 px-md-4">
+                                <img src="~/sneat-bootstrap-html-admin-template/assets/img/illustrations/man-with-laptop-light.png"
+                                     height="140"
+                                     alt="View Badge User"
+                                     data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                                     data-app-light-img="illustrations/man-with-laptop-light.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 order-1">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="~/sneat-bootstrap-html-admin-template/assets/img/icons/unicons/chart-success.png"
+                                             alt="chart success"
+                                             class="rounded" />
+                                    </div>
+                                </div>
+                                <span class="fw-semibold d-block mb-1">Toplam İş Sayısı</span>
+                                <h3 class="card-title mb-2">@Model.ToplamIsSayisi</h3>
+                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +12.06%</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="~/sneat-bootstrap-html-admin-template/assets/img/icons/unicons/wallet.png"
+                                             alt="Credit Card"
+                                             class="rounded" />
+                                    </div>
+                                </div>
+                                <span>Devam Eden İş Sayısı</span>
+                                <h3 class="card-title text-nowrap mb-1">@Model.DevamEden</h3>
+                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Total Revenue -->
+            <div class="col-2 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                <div class="card">
+                    <div class="row row-bordered g-0">
+                        <div class="col-md-12">
+                            <h5 class="card-header m-0 me-2 pb-3">Grafik</h5>
+                            <canvas class="chart-container" id="chartIsDurumu"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/ Total Revenue -->
+            <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="~/sneat-bootstrap-html-admin-template/assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded" />
+                                    </div>
+                                </div>
+                                <span class="d-block mb-1">Tamamlanan İş Sayısı</span>
+                                <h3 class="card-title text-nowrap mb-2">@Model.Tamamlanan</h3>
+                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +14.82%</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="~/sneat-bootstrap-html-admin-template/assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded" />
+                                    </div>
+                                </div>
+                                <span class="fw-semibold d-block mb-1">İptal Edilen İş Sayısı</span>
+                                <h3 class="card-title mb-2">@Model.İptal</h3>
+                                <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.14%</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+                    <div class="row"> -->
+                    <div class="col-12 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                                    <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                                        <div class="card-title">
+                                            <h5 class="text-nowrap mb-2">Tarih</h5>
+                                            <span class="badge bg-label-warning rounded-pill">@DateTime.Now.Year</span>
+                                        </div>
+                                        <div class="mt-sm-auto">
+                                            <small class="text-success text-nowrap fw-semibold"><i class="bx bx-time"></i>   @DateTime.Now.ToShortTimeString()</small>
+                                            <h3 class="mb-0">@DateTime.Now.ToLongDateString()</h3>
+                                        </div>
+                                    </div>
+                                    <div id="profileReportChart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var chartData = @Html.Raw(Json.Encode(Model.GrafikVerileri));
+
+        var ctx = document.getElementById('chartIsDurumu').getContext('2d');
+        var barColors = ['#36A2EB', '#FFCE56', '#FF6384'];
+
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartData.map(x => x.Label),
+                datasets: [{
+                    data: chartData.map(x => x.Value),
+                    backgroundColor: barColors,
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                title: {
+                    display: true,
+                    text: 'İş Durumu',
+                    font: {
+                        size: 18,
+                        weight: 'bold'
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 10
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        }
+                    }
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+            }
+        });
+
+        var legendContainer = document.getElementById('legend-container');
+        barColors.forEach((color, index) => {
+            var label = chartData[index].Label;
+            var value = chartData[index].Value;
+            var item = document.createElement('div');
+            item.innerHTML = `<span style="background-color: ${color};"></span> ${label} - ${value}%`;
+            legendContainer.appendChild(item);
+        });
+    </script>
+}

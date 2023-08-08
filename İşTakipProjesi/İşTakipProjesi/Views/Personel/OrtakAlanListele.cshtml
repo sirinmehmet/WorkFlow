@@ -1,0 +1,59 @@
+﻿@using İşTakipProjesi.Models.Baglantisql
+@model List<OrtakAlan>
+@{
+    ViewBag.Title = "OrtakAlanListele";
+    Layout = "~/Views/Shared/PersonelLayout.cshtml";
+}
+
+
+<style>
+    #dataTable.dataTable.no-footer {
+        border-bottom: 1px solid white;
+    }
+</style>
+<title>Ortak Alan Listesi</title>
+<link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="card">
+        <h5 class="card-header">Ortak Alan Listesi</h5>
+        <div class="table-responsive text-nowrap">
+            <table id="dataTable" class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>GONDEREN</th>
+                        <th>KONU</th>
+                        <th>MESAJ</th>
+                        <th>DOSYA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var veri in Model)
+                    {
+                        <tr>
+                            <th>@veri.ID</th>
+                            <td>@veri.Gonderen</td>
+                            <td>@veri.Konu</td>
+                            <td>@veri.Mesaj</td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(veri.Dosya))
+                                {
+                                    <a href="@Url.Content("~/Uploads/" + veri.Dosya)" class="btn btn-primary">Download</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#dataTable').DataTable();
+        });
+    </script>
+}

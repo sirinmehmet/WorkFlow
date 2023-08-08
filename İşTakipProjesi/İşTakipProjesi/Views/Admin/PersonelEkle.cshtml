@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "PersonelEkle";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<title>Personel Ekle</title>
+<div class="container" style="margin-top: 50px;">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <h2 class="card-title text-center mb-4">Yeni Personel Ekle</h2>
+            <form method="post">
+                <br />
+                <div class="form-group">
+                    <label>Ad Soyad</label>
+                    <input type="text" class="form-control" name="AdSoyad" placeholder="Ad Soyad Giriniz" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>E-Mail</label>
+                    <input type="email" class="form-control" name="Eposta" placeholder="E-Mail Giriniz" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Kullanıcı Adı</label>
+                    <input type="text" class="form-control" name="KullaniciAdi" placeholder="Kullanıcı Adı Giriniz" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <input type="text" class="form-control" name="Sifre" placeholder="Şifre Giriniz" required>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-info">Personel Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>

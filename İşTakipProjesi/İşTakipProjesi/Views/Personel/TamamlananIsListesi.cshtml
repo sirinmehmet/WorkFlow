@@ -1,0 +1,80 @@
+﻿@using İşTakipProjesi.Models.Baglantisql
+@model List<İsTakip>
+@{
+    ViewBag.Title = "TamamlananİşListesi";
+    Layout = "~/Views/Shared/PersonelLayout.cshtml";
+}
+<style>
+    #dataTable.dataTable.no-footer {
+        border-bottom: 1px solid white;
+    }
+</style>
+<title>Tamamlnan İşlerim Listesi</title>
+<link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="card">
+        <h5 class="card-header">Tamamlanan İşlerim Listesi</h5>
+        @if (!string.IsNullOrEmpty(ViewBag.Message))
+        {
+            <div class="alert alert-info">
+                @ViewBag.Message
+            </div>
+        }
+        <div class="table-responsive text-nowrap">
+            <table id="dataTable" class="table">
+                <thead>
+                    <tr>
+                        <th>İŞ ID</th>
+                        <th>SORUMLU PERSONEL</th>
+                        <th>TALEP EDEN</th>
+                        <th>KONU</th>
+                        <th>DEPARTMAN</th>
+                        <th>MODÜL</th>
+                        <th>TARİH</th>
+                        <th>DURUM</th>
+                        <th>DOSYA</th>
+                        <th>İPTAL ET</th>
+                        <th>GÜNCELLE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var veri in Model)
+                    {
+                        <tr>
+                            <th>@veri.ID</th>
+                            <td>@veri.SorumluPersonel</td>
+                            <td>@veri.TalepEden</td>
+                            <td>@veri.Konu</td>
+                            <td>@veri.Departman</td>
+                            <td>@veri.Modul</td>
+                            <td>@veri.Tarih</td>
+                            <td>@veri.Durum</td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(veri.Dosya))
+                                {
+                                    <a href="@Url.Content("~/Uploads/" + veri.Dosya)" class="btn btn-primary">Download</a>
+                                }
+                            </td>
+                            <td>
+                                <a class="btn btn-danger" href="/Personel/İşİptali/@veri.ID">İPTAL ET</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-success" href="/Personel/İşBilgiGetir/@veri.ID">GÜNCELLE</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a class="btn btn-primary" href="/Personel/YeniİşKaydı">Yeni İş Kaydı Ekle</a>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#dataTable').DataTable();
+        });
+    </script>
+}

@@ -1,0 +1,52 @@
+﻿@model İşTakipProjesi.Models.Baglantisql.Personel
+
+@{
+    ViewBag.Title = "PersonelBilgiGetir";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    var aktifMiListesi = new SelectList(new[]
+   {
+        new { Value = "aktif", Text = "Aktif" },
+        new { Value = "pasif", Text = "Pasif" }
+    }, "Value", "Text", Model.AktifMi);
+}
+
+<title>Personel Ekle</title>
+<div class="container" style="margin-top: 50px;">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <h2 class="card-title text-center mb-4">Yeni Personel Ekle</h2>
+            @using (Html.BeginForm("PersonelGüncelle", "Admin", FormMethod.Post))
+            {
+                <br />
+                @Html.HiddenFor(m => m.ID, new { @class = "form-control" })
+                <div class="form-group">
+                    <label>Ad Soyad</label>
+                    @Html.TextBoxFor(m => m.AdSoyad, new { @class = "form-control" })
+
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>E-Mail</label>
+                    @Html.TextBoxFor(m => m.Eposta, new { @class = "form-control" })
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Kullanıcı Adı</label>
+                    @Html.TextBoxFor(m => m.KullaniciAdi, new { @class = "form-control" })
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Şifre</label>
+                    @Html.TextBoxFor(m => m.Sifre, new { @class = "form-control" })
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Aktif Mi</label>
+                    @Html.DropDownListFor(m => m.AktifMi, aktifMiListesi, new { @class = "form-control" })
+                </div>
+                <br />
+                <button type="submit" class="btn btn-info">Personel Güncelle</button>
+            }
+        </div>
+    </div>
+</div>

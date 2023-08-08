@@ -1,0 +1,54 @@
+﻿@using İşTakipProjesi.Models.Baglantisql
+@model List<İletisim>
+@{
+    ViewBag.Title = "MesajListesi";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<style>
+    #dataTable.dataTable.no-footer {
+        border-bottom: 1px solid white;
+    }
+</style>
+<title>Mesaj Listesi</title>
+<link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="card">
+        <h5 class="card-header">Mesaj Listesi</h5>
+        <div class="table-responsive text-nowrap">
+            <table id="dataTable" class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>GÖNDEREN AD SOYAD</th>
+                        <th>KONU</th>
+                        <th>MESAJ</th>
+                        <th>MESAJ CEVAPLA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var veri in Model)
+                    {
+                        <tr>
+                            <th>@veri.ID</th>
+                            <td>@veri.GönderenKisi</td>
+                            <td>@veri.Konu</td>
+                            <td>@veri.Mesaj</td>
+                            <td>
+                                <a href="@Url.Action("MesajCevapla", "Admin", new { id = veri.ID })" class="btn btn-primary">Mesaj Cevapla</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#dataTable').DataTable();
+        });
+    </script>
+}

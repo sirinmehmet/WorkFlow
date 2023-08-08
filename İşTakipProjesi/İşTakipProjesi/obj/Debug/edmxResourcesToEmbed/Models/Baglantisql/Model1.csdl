@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="İşTakipDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminGiris">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AdiSoyadi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="İletisim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Konu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Mesaj" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="GönderilecekKisi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="GönderenKisi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="İsTakip">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SorumluPersonel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TalepEden" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Konu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Departman" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Modul" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tarih" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Durum" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Dosya" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Personel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Eposta" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AktifMi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="İşTakipDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminGiris" EntityType="Self.AdminGiris" />
+    <EntitySet Name="İletisim" EntityType="Self.İletisim" />
+    <EntitySet Name="İsTakip" EntityType="Self.İsTakip" />
+    <EntitySet Name="Personel" EntityType="Self.Personel" />
+    <EntitySet Name="OrtakAlan" EntityType="İşTakipDbModel.OrtakAlan" />
+  </EntityContainer>
+  <EntityType Name="OrtakAlan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gonderen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Konu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Mesaj" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Dosya" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

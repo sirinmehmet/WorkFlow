@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "OrtakAlanEkle";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+<title>Ortak Alan Kaydı</title>
+<div class="container" style="margin-top: 50px;">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <h2 class="card-title text-center mb-4">Yeni Ortak Alan Kaydı Ekle</h2>
+            <form method="post" enctype="multipart/form-data">
+                <br />
+                <div class="form-group">
+                    <label>Gonderen</label>
+                    <input type="text" value="@Session["adsoyad"]" readonly="true" class="form-control" name="Gonderen" placeholder="Gonderen Giriniz" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Konu</label>
+                    <input type="text" class="form-control" name="Konu" placeholder="Konu Giriniz" required>
+                </div>
+                <br />
+                <div class="mb-3">
+                    <label class="form-label" for="basic-icon-default-message">Mesaj</label>
+                    <div class="input-group input-group-merge">
+                        <span id="basic-icon-default-message2" class="input-group-text">
+                            <i class="bx bx-comment"></i>
+                        </span>
+                        <textarea id="basic-icon-default-message"
+                                  class="form-control" name="Mesaj"
+                                  placeholder="Mesaj Giriniz."></textarea>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Dosya</label>
+                    <input type="file" class="form-control" name="Dosya" required>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-info">Yeni Ortak Alan Kaydı Ekle</button>
+            </form>
+            @if (!string.IsNullOrEmpty(ViewBag.FilePath))
+            {
+                <p>
+                    <a href="@ViewBag.FilePath" class="btn btn-primary">Download Uploaded File</a>
+                </p>
+            }
+        </div>
+    </div>
+</div>
+

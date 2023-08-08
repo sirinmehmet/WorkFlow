@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "YeniİşKaydı";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<title>Yeni İş Kaydı</title>
+<div class="container" style="margin-top: 50px;">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <h2 class="card-title text-center mb-4">Yeni İş Kaydı Ekle</h2>
+            <form method="post" enctype="multipart/form-data">
+                <br />
+                <div class="form-group">
+                    <label>Sorumlu Personel</label>
+                    <select class="form-control" name="SorumluPersonel" required>
+                        <option value="">Sorumlu Personel Seçiniz</option>
+                        @foreach (var personel in ViewBag.PersonelListesi)
+                        {
+                            <option value="@personel.AdSoyad">@personel.AdSoyad</option>
+                        }
+                    </select>
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <label>Talep Eden</label>
+                    <input type="text" value="@Session["adsoyad"]" readonly="true" class="form-control" name="TalepEden" placeholder="Talep Eden Giriniz" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Konu</label>
+                    <input type="text" class="form-control" name="Konu" placeholder="Konu Giriniz" required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Departman</label>
+                    <select name="Departman" class="form-control">
+                        <option value="Departman 1">Departman 1</option>
+                        <option value="Departman 2">Departman 2</option>
+                        <option value="Departman 3">Departman 3</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Modül</label>
+                    <div>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Modul" value="Modul 1"> Modul 1
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Modul" value="Modul 2"> Modul 2
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Modul" value="Modul 3"> Modul 3
+                        </label>
+                    </div>
+                </div>
+
+                <br />
+                <div class="form-group">
+                    <label>Durum</label>
+                    <select name="Durum" class="form-control">
+                        <option value="Devam Ediyor">Devam Ediyor</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Dosya</label>
+                    <input type="file" class="form-control" name="Dosya">
+                </div>
+                <br />
+                <button type="submit" class="btn btn-info">Yeni İş Kaydı Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>

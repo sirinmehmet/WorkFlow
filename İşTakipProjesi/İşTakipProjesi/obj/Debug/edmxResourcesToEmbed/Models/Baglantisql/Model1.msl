@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="İşTakipDbModelStoreContainer" CdmEntityContainer="İşTakipDbEntities">
+    <EntitySetMapping Name="AdminGiris">
+      <EntityTypeMapping TypeName="İşTakipDbModel.AdminGiris">
+        <MappingFragment StoreEntitySet="AdminGiris">
+          <ScalarProperty Name="AdiSoyadi" ColumnName="AdiSoyadi" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="İletisim">
+      <EntityTypeMapping TypeName="İşTakipDbModel.İletisim">
+        <MappingFragment StoreEntitySet="İletisim">
+          <ScalarProperty Name="GönderenKisi" ColumnName="GönderenKisi" />
+          <ScalarProperty Name="GönderilecekKisi" ColumnName="GönderilecekKisi" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Konu" ColumnName="Konu" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="İsTakip">
+      <EntityTypeMapping TypeName="İşTakipDbModel.İsTakip">
+        <MappingFragment StoreEntitySet="İsTakip">
+          <ScalarProperty Name="Dosya" ColumnName="Dosya" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SorumluPersonel" ColumnName="SorumluPersonel" />
+          <ScalarProperty Name="TalepEden" ColumnName="TalepEden" />
+          <ScalarProperty Name="Konu" ColumnName="Konu" />
+          <ScalarProperty Name="Departman" ColumnName="Departman" />
+          <ScalarProperty Name="Modul" ColumnName="Modul" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personel">
+      <EntityTypeMapping TypeName="İşTakipDbModel.Personel">
+        <MappingFragment StoreEntitySet="Personel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrtakAlan">
+      <EntityTypeMapping TypeName="İşTakipDbModel.OrtakAlan">
+        <MappingFragment StoreEntitySet="OrtakAlan">
+          <ScalarProperty Name="Dosya" ColumnName="Dosya" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+          <ScalarProperty Name="Konu" ColumnName="Konu" />
+          <ScalarProperty Name="Gonderen" ColumnName="Gonderen" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
